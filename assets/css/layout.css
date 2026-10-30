@@ -1,0 +1,108 @@
+/* ==========================================================================
+   CS Nova Labs — layout.css
+   Estructura de página: contenedor, header, secciones y footer.
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  position: fixed; inset: 0 0 auto 0; z-index: 50;
+  color: var(--white);
+  transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  border-bottom: 1px solid transparent;
+}
+.site-header.is-scrolled {
+  background: rgba(13, 27, 46, .92);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  backdrop-filter: saturate(140%) blur(10px);
+  border-bottom-color: var(--ink-line);
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+
+.site-nav { display: flex; align-items: center; gap: 2rem; }
+.nav-list { display: flex; gap: 1.75rem; }
+.nav-list a {
+  text-decoration: none; color: var(--mist); font-size: var(--fs-small); font-weight: 500;
+  padding-block: .4rem; position: relative; transition: color var(--dur) var(--ease);
+}
+.nav-list a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+  background: var(--nova); transform: scaleX(0); transform-origin: left;
+  transition: transform 240ms var(--ease);
+}
+.nav-list a:hover, .nav-list a.is-active { color: var(--white); }
+.nav-list a:hover::after, .nav-list a.is-active::after { transform: scaleX(1); }
+
+.nav-toggle { display: none; }
+
+@media (max-width: 860px) {
+  .nav-toggle {
+    display: grid; place-items: center; width: 44px; height: 44px;
+    background: transparent; border: 1px solid var(--ink-line); border-radius: var(--radius-sm); cursor: pointer;
+  }
+  .nav-toggle-bar, .nav-toggle-bar::before, .nav-toggle-bar::after {
+    display: block; width: 18px; height: 1.5px; background: var(--white); border-radius: 2px;
+    transition: transform 220ms var(--ease), opacity var(--dur);
+  }
+  .nav-toggle-bar { position: relative; }
+  .nav-toggle-bar::before, .nav-toggle-bar::after { content: ""; position: absolute; left: 0; }
+  .nav-toggle-bar::before { top: -6px; }
+  .nav-toggle-bar::after { top: 6px; }
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar { background: transparent; }
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar::before { transform: translateY(6px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar::after { transform: translateY(-6px) rotate(-45deg); }
+
+  .site-nav {
+    position: fixed; inset: 72px 0 auto 0;
+    flex-direction: column; align-items: stretch; gap: 1.5rem;
+    padding: 1.5rem var(--gutter) 2rem;
+    background: var(--ink); border-bottom: 1px solid var(--ink-line);
+    opacity: 0; visibility: hidden; transform: translateY(-8px);
+    transition: opacity 200ms var(--ease), transform 200ms var(--ease), visibility 0s 200ms;
+  }
+  .site-nav.is-open { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+  .nav-list { flex-direction: column; gap: 0; }
+  .nav-list a { display: block; padding: .85rem 0; font-size: 1.125rem; color: var(--white); border-bottom: 1px solid var(--ink-line); }
+  .nav-list a::after { display: none; }
+  .site-header:has(.is-open) { background: var(--ink); }
+}
+
+/* ---------- Secciones ---------- */
+.section { padding-block: var(--section-y); }
+.section-paper { background: var(--paper); }
+.section-dark { background: var(--ink); color: var(--white); }
+.section-dark .section-intro { color: var(--mist); }
+
+.section-head {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 1.5rem 4rem;
+  align-items: end; margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+.section-intro { color: var(--slate); max-width: 52ch; font-size: 1.125rem; }
+@media (max-width: 760px) {
+  .section-head { grid-template-columns: 1fr; }
+}
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--ink); color: var(--mist); padding-top: 4rem; border-top: 1px solid var(--ink-line); }
+.footer-grid {
+  display: grid; grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr)); gap: 2.5rem;
+  padding-bottom: 3rem;
+}
+.footer-brand .brand { color: var(--white); margin-bottom: 1rem; }
+.footer-brand p { max-width: 34ch; font-size: var(--fs-small); }
+.footer-title { font-size: .875rem; font-weight: 600; color: var(--white); margin-bottom: 1rem; letter-spacing: 0; }
+.footer-col li + li { margin-top: .55rem; }
+.footer-col a { text-decoration: none; font-size: var(--fs-small); transition: color var(--dur); }
+.footer-col a:hover { color: var(--white); }
+.footer-bottom { border-top: 1px solid var(--ink-line); padding-block: 1.5rem; font-size: .875rem; }
+
+@media (max-width: 860px) {
+  .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-brand { grid-column: 1 / -1; }
+}

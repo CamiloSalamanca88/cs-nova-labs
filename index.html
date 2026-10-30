@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO básico -->
+  <title>CS Nova Labs | Desarrollo de software, IA y diseño web en Perú y Chile</title>
+  <meta name="description" content="CS Nova Labs diseña y desarrolla software a medida, sitios web e implementaciones de inteligencia artificial para personas, emprendedores y empresas en Perú y Chile.">
+  <meta name="theme-color" content="#0D1B2E">
+  <!-- PROVISIONAL: reemplazar por el dominio definitivo (también en og:url, og:image y JSON-LD) -->
+  <link rel="canonical" href="https://www.csnovalabs.com/">
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CS Nova Labs">
+  <meta property="og:title" content="CS Nova Labs | Software, IA y web a la medida">
+  <meta property="og:description" content="Software a medida, sitios web e inteligencia artificial para emprendedores y empresas en Perú y Chile.">
+  <meta property="og:url" content="https://www.csnovalabs.com/">
+  <meta property="og:image" content="https://www.csnovalabs.com/assets/img/og-image.png">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:locale:alternate" content="es_CL">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos (orden: tokens/base → layout → componentes) -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Datos estructurados (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "CS Nova Labs",
+    "description": "Desarrollo de software a medida, implementación de inteligencia artificial, diseño web y servicios digitales.",
+    "url": "https://www.csnovalabs.com/",
+    "logo": "https://www.csnovalabs.com/assets/img/favicon.svg",
+    "areaServed": [
+      { "@type": "Country", "name": "Perú" },
+      { "@type": "Country", "name": "Chile" }
+    ],
+    "knowsLanguage": "es",
+    "serviceType": [
+      "Desarrollo de software a medida",
+      "Implementación de inteligencia artificial",
+      "Diseño y desarrollo web",
+      "Servicios digitales"
+    ]
+  }
+  </script>
+
+  <!-- Scripts clásicos con defer (sin módulos ES para que funcione al abrir el archivo con doble clic) -->
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/hero-nova.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="CS Nova Labs, ir al inicio">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <line x1="16" y1="2" x2="16" y2="10"/><line x1="16" y1="22" x2="16" y2="30"/>
+            <line x1="2" y1="16" x2="10" y2="16"/><line x1="22" y1="16" x2="30" y2="16"/>
+            <line x1="6.1" y1="6.1" x2="11" y2="11"/><line x1="21" y1="21" x2="25.9" y2="25.9"/>
+            <line x1="25.9" y1="6.1" x2="21" y2="11"/><line x1="11" y1="21" x2="6.1" y2="25.9"/>
+          </g>
+          <circle cx="16" cy="16" r="2.6" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">CS Nova <span class="brand-light">Labs</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-nav-toggle>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-nav>
+        <ul class="nav-list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#metodo">Cómo trabajamos</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary btn-sm">Solicitar cotización</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <canvas class="hero-nova" aria-hidden="true" data-nova></canvas>
+      <div class="container hero-inner">
+        <h1 id="hero-title" class="hero-title">Software, inteligencia artificial y web a la medida de tu negocio.</h1>
+        <p class="hero-lead">
+          Diseñamos y desarrollamos sistemas, sitios web y soluciones con IA para personas,
+          emprendedores y empresas en Perú y Chile. Partimos de cómo funciona tu operación,
+          no de una plantilla.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">Solicitar cotización</a>
+          <a href="#proyectos" class="btn btn-ghost">Ver proyectos</a>
+        </div>
+        <ul class="hero-stack" aria-label="Tecnologías con las que trabajamos">
+          <li>Java</li><li>Spring Boot</li><li>Vaadin</li><li>MySQL</li><li>HTML, CSS y JavaScript</li><li>Modelos de IA</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="servicios-title">Servicios</h2>
+          <p class="section-intro">Cuatro líneas de trabajo que se combinan según lo que necesites: desde una página web hasta un sistema completo con IA integrada.</p>
+        </header>
+
+        <ul class="service-list">
+          <li class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16"/></svg>
+            </div>
+            <div class="service-body">
+              <h3>Desarrollo de software a medida</h3>
+              <p>Sistemas web y de escritorio construidos para tus procesos: catálogos, inventarios, gestión interna y reportes. Código documentado y entregado a tu nombre.</p>
+            </div>
+            <a href="#contacto" class="service-link" data-service="Desarrollo de software a medida">Consultar<span class="sr-only"> sobre desarrollo de software a medida</span></a>
+          </li>
+          <li class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6.3 6.3l2.1 2.1M15.6 15.6l2.1 2.1M17.7 6.3l-2.1 2.1M8.4 15.6l-2.1 2.1"/><circle cx="12" cy="12" r="2.5"/></svg>
+            </div>
+            <div class="service-body">
+              <h3>Implementación de inteligencia artificial</h3>
+              <p>Integramos modelos de IA en tus flujos de trabajo: asistentes para atención, lectura y clasificación de documentos, y automatización de respuestas repetitivas.</p>
+            </div>
+            <a href="#contacto" class="service-link" data-service="Implementación de IA">Consultar<span class="sr-only"> sobre implementación de IA</span></a>
+          </li>
+          <li class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg>
+            </div>
+            <div class="service-body">
+              <h3>Diseño y desarrollo web</h3>
+              <p>Sitios corporativos y páginas de aterrizaje rápidos, adaptados a móviles y preparados para buscadores, con un diseño hecho para tu marca.</p>
+            </div>
+            <a href="#contacto" class="service-link" data-service="Diseño y desarrollo web">Consultar<span class="sr-only"> sobre diseño y desarrollo web</span></a>
+          </li>
+          <li class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 17l4-4 3 3 7-8"/><path d="M14 8h4v4"/><path d="M4 21h16"/></svg>
+            </div>
+            <div class="service-body">
+              <h3>Servicios digitales</h3>
+              <p>Automatización de tareas, despliegue en la nube, mantenimiento y soporte técnico continuo para que tus herramientas sigan funcionando.</p>
+            </div>
+            <a href="#contacto" class="service-link" data-service="Servicios digitales">Consultar<span class="sr-only"> sobre servicios digitales</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ POR QUÉ ELEGIRNOS / MÉTODO ============ -->
+    <section class="section section-dark" id="metodo" aria-labelledby="metodo-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="metodo-title">Cómo trabajamos</h2>
+          <p class="section-intro">Un proceso corto y claro. Sabes en qué etapa está tu proyecto y qué viene después.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Diagnóstico</h3>
+            <p>Conversamos sobre tu operación, el problema real y lo que ya tienes funcionando.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Propuesta</h3>
+            <p>Recibes alcance, plazos y valor por escrito, desglosados por etapa.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Desarrollo</h3>
+            <p>Avanzamos en entregas parciales que puedes revisar y probar antes del cierre.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">4</span>
+            <h3>Entrega y soporte</h3>
+            <p>Publicamos, capacitamos a tu equipo y dejamos la documentación lista.</p>
+          </li>
+        </ol>
+
+        <div class="commitments">
+          <div class="commitment">
+            <h3>Soluciones a medida</h3>
+            <p>Cada proyecto parte de tus procesos. No adaptamos tu negocio a una plantilla.</p>
+          </div>
+          <div class="commitment">
+            <h3>Trato directo</h3>
+            <p>Hablas con quien desarrolla tu proyecto, sin intermediarios.</p>
+          </div>
+          <div class="commitment">
+            <h3>Código que te pertenece</h3>
+            <p>Entregamos el código fuente documentado para que nunca dependas de nosotros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="proyectos-title">Proyectos</h2>
+          <p class="section-intro">Trabajo real, en producción o en desarrollo.</p>
+        </header>
+
+        <article class="project">
+          <figure class="project-media">
+            <!-- PROVISIONAL: reemplazar por captura real (WebP, ~1600×1000) -->
+            <img src="assets/img/proyecto-vademecum.svg" width="1600" height="1000" loading="lazy"
+                 alt="Captura pendiente del sistema Vademécum Antroposófico Digital">
+          </figure>
+          <div class="project-body">
+            <p class="project-status status-live">En producción</p>
+            <h3>Vademécum Antroposófico Digital</h3>
+            <p>Sistema web para gestionar el catálogo de una farmacia antroposófica, con una aplicación móvil complementaria para consulta. Despliegue automatizado en la nube desde el repositorio.</p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li>Java</li><li>Spring Boot</li><li>Vaadin</li><li>App móvil</li><li>Railway</li><li>GitHub CI/CD</li>
+            </ul>
+            <!-- PROVISIONAL: agregar enlace a demo o caso de estudio en config.js, o eliminar -->
+            <a href="#" class="text-link" data-project-link="vademecum">Ver proyecto</a>
+          </div>
+        </article>
+
+        <article class="project project-reverse">
+          <figure class="project-media">
+            <!-- PROVISIONAL: reemplazar por captura real -->
+            <img src="assets/img/proyecto-condominios.svg" width="1600" height="1000" loading="lazy"
+                 alt="Captura pendiente del sitio web para empresa de administración de condominios">
+          </figure>
+          <div class="project-body">
+            <p class="project-status status-progress">En desarrollo</p>
+            <h3>Sitio web para administración de condominios</h3>
+            <p>Diseño y desarrollo del sitio corporativo de una nueva empresa chilena de administración y asesoría de condominios: identidad digital, servicios y canal de contacto.</p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li>Diseño web</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ NOSOTROS ============ -->
+    <section class="section section-paper" id="nosotros" aria-labelledby="nosotros-title">
+      <div class="container about">
+        <div class="about-main">
+          <h2 id="nosotros-title">Nosotros</h2>
+          <!-- PROVISIONAL: revisar redacción -->
+          <p class="about-lead">CS Nova Labs nace para acercar la tecnología a quienes la necesitan para trabajar mejor: negocios que llevan sus procesos en planillas, emprendedores que necesitan presencia digital y empresas que quieren aprovechar la IA sin complicarse.</p>
+          <p>Su fundador combina formación como Analista Programador con más de una década de experiencia en operación, compras y coordinación de equipos en la industria farmacéutica. Por eso empezamos cada proyecto entendiendo la operación, no solo el código.</p>
+        </div>
+
+        <dl class="about-facts">
+          <!-- PROVISIONAL: misión y visión en borrador, revisar antes de publicar -->
+          <div>
+            <dt>Misión</dt>
+            <dd>Desarrollar soluciones tecnológicas claras y útiles que resuelvan problemas concretos de nuestros clientes.</dd>
+          </div>
+          <div>
+            <dt>Visión</dt>
+            <dd>Ser un aliado tecnológico de confianza para emprendedores y empresas en Perú y Chile.</dd>
+          </div>
+          <div>
+            <dt>Forma de trabajo</dt>
+            <dd>Comunicación directa, entregas parciales y documentación completa en cada proyecto.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section section-dark" id="contacto" aria-labelledby="contacto-title">
+      <div class="container contact">
+        <div class="contact-intro">
+          <h2 id="contacto-title">Cuéntanos tu proyecto</h2>
+          <p>Completa el formulario y se abrirá WhatsApp con tu mensaje listo para enviar. Respondemos con preguntas o una propuesta inicial.</p>
+          <ul class="contact-channels">
+            <li>
+              <span class="channel-label">WhatsApp</span>
+              <a href="#" data-whatsapp-link data-config-text="whatsappDisplay">[Número pendiente]</a>
+            </li>
+            <li>
+              <span class="channel-label">Correo</span>
+              <a href="#" data-email-link data-config-text="email">[correo pendiente]</a>
+            </li>
+            <li>
+              <span class="channel-label">Atención</span>
+              <span>Perú y Chile, en modalidad remota</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" novalidate data-contact-form>
+          <div class="field">
+            <label for="f-nombre">Nombre</label>
+            <input id="f-nombre" name="nombre" type="text" autocomplete="name" required minlength="2" placeholder="Ana Torres" aria-describedby="e-nombre">
+            <p class="field-error" id="e-nombre"></p>
+          </div>
+          <div class="field">
+            <label for="f-correo">Correo electrónico</label>
+            <input id="f-correo" name="correo" type="email" autocomplete="email" required placeholder="ana@empresa.com" aria-describedby="e-correo">
+            <p class="field-error" id="e-correo"></p>
+          </div>
+          <div class="field">
+            <label for="f-servicio">Tipo de servicio</label>
+            <select id="f-servicio" name="servicio" required aria-describedby="e-servicio">
+              <option value="">Selecciona una opción</option>
+              <option>Desarrollo de software a medida</option>
+              <option>Implementación de IA</option>
+              <option>Diseño y desarrollo web</option>
+              <option>Servicios digitales</option>
+              <option>Otro / aún no lo sé</option>
+            </select>
+            <p class="field-error" id="e-servicio"></p>
+          </div>
+          <div class="field">
+            <label for="f-mensaje">Descripción del proyecto</label>
+            <textarea id="f-mensaje" name="mensaje" rows="5" required minlength="20" placeholder="Necesito un sistema para controlar el inventario de mi tienda y emitir reportes mensuales." aria-describedby="e-mensaje"></textarea>
+            <p class="field-error" id="e-mensaje"></p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar por WhatsApp</button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand" aria-label="CS Nova Labs, ir al inicio">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+              <line x1="16" y1="2" x2="16" y2="10"/><line x1="16" y1="22" x2="16" y2="30"/>
+              <line x1="2" y1="16" x2="10" y2="16"/><line x1="22" y1="16" x2="30" y2="16"/>
+              <line x1="6.1" y1="6.1" x2="11" y2="11"/><line x1="21" y1="21" x2="25.9" y2="25.9"/>
+              <line x1="25.9" y1="6.1" x2="21" y2="11"/><line x1="11" y1="21" x2="6.1" y2="25.9"/>
+            </g>
+            <circle cx="16" cy="16" r="2.6" fill="currentColor"/>
+          </svg>
+          <span class="brand-name">CS Nova <span class="brand-light">Labs</span></span>
+        </a>
+        <p>Desarrollo de software, inteligencia artificial, diseño web y servicios digitales para Perú y Chile.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Navegación del pie de página">
+        <h2 class="footer-title">Sitio</h2>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#metodo">Cómo trabajamos</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Contacto</h2>
+        <ul>
+          <li><a href="#" data-whatsapp-link data-config-text="whatsappDisplay">[Número pendiente]</a></li>
+          <li><a href="#" data-email-link data-config-text="email">[correo pendiente]</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Redes</h2>
+        <!-- Los enlaces se completan desde assets/js/config.js; los vacíos se ocultan -->
+        <ul>
+          <li><a href="#" data-social="linkedin" rel="noopener" target="_blank">LinkedIn</a></li>
+          <li><a href="#" data-social="github" rel="noopener" target="_blank">GitHub</a></li>
+          <li><a href="#" data-social="instagram" rel="noopener" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> CS Nova Labs. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
